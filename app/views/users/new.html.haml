@@ -1,0 +1,6 @@
+= form_for @user do |f|
+  .field
+    = f.label :access_token
+    = f.text_field :access_token
+  .actions
+    = f.submit 'Save'
