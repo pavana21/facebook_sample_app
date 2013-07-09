@@ -1,0 +1,20 @@
+%p
+  %b Username: 
+  = @user.username
+%p
+  %b Name: 
+  = @user.name
+%p
+  %b Gender: 
+  = @user.gender
+%p
+  %b HomeTown: 
+  = @user.hometown
+%p
+  %b Location: 
+  = @user.location
+%p
+  %b Bio: 
+  = @user.bio.present? ? @user.bio : "No Bio"
+
+= link_to "Back", root_url
